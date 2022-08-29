@@ -1,4 +1,9 @@
 /* ============ GENERAL ============ */
+
+::selection {
+    background-color: #977AEEBB;
+}
+
 .overlay {
     background-color: #404255;
 }
@@ -42,8 +47,21 @@
 
 .info button {
     height: 30px;
-    background-color: 977AEE;
+    width: 130px;
+    border: 1px solid #977AEE;
+    background-color: #977AEE;
+    line-height: 15px;
     font-size: 12px;
+}
+
+.info button:hover {
+    border: 1px solid #977AEE;
+    background-color: transparent;
+}
+
+.info button:focus {
+    border: 1px solid #977AEE;
+    background-color: transparent;
 }
 
 .info a {
