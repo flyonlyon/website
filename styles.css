@@ -1,0 +1,60 @@
+/* ============ GENERAL ============ */
+.overlay {
+    background-color: #404255;
+}
+
+.noPadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+/* ============ NAV BAR ============ */
+
+.nav {
+    padding-top: 2.5vh;
+    padding-right: 7.5vw;
+    padding-bottom: 2.5vh;
+}
+
+.nav li a{
+    color: #FFFFFF;
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.nav li a:hover {
+    color: #977AEE;
+}
+
+.nav li div {
+    width: 24px;
+}
+
+/* ============= HOME ============== */
+
+#home {
+    min-height: 80vh;
+    color: #FFFFFF;
+    font-family: "Satoshi";
+    font-weight: 500;
+}
+
+.info button {
+    height: 30px;
+    background-color: 977AEE;
+    font-size: 12px;
+}
+
+.info a {
+    width: 30px;
+}
+
+.info a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* =========== PROJECTS ============ */
+/* ========== EXPERIENCE =========== */
+/* ============ ABOUT ============== */
