@@ -4,8 +4,9 @@
     background-color: #977AEE99;
 }
 
-.overlay {
-    background-color: #404255;
+.lightCard {
+    background-color: #404255FF;
+    
 }
 
 .noPadding {
@@ -13,12 +14,71 @@
    margin: 0 !important;
 }
 
+h1 {
+    font-size: 60px;
+}
+
+/* ========== BACKGROUND =========== */
+
+@keyframes hue {
+    0% {transform: scale(1);}
+    25% {transform: scale(0.9);}
+    50% {transform: scale(1);}
+    75% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+.hue {
+    z-index: -1;
+    opacity: 0.3;
+    position: fixed;
+    
+    border-radius: 100%;
+    filter: blur(7000px);
+    
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#Circle1 {
+    height: 30vw;
+    width: 30vw;
+    background-color: #77ACA2; 
+    margin-left: 15vw;
+    margin-top: -10vw;
+    
+    animation-name: hue;
+    animation-duration: 5s;
+}
+
+#Circle2 {
+    height: 35vw;
+    width: 35vw;
+    background-color: #977AEE; 
+    margin-left: 52vw;
+    margin-top: 10vw;
+    
+    animation-name: hue;
+    animation-duration: 7s;
+}
+
+#Circle3 {
+    height: 25vw;
+    width: 25vw;
+    background-color: #8A716A; 
+    margin-left: 17vw;
+    margin-top: 30vw;
+    
+    animation-name: hue;
+    animation-duration: 9s;
+}
+
 /* ============ NAV BAR ============ */
 
 .nav {
-    padding-top: 2.5vh;
+    padding-top: 5vh;
     padding-right: 7.5vw;
-    padding-bottom: 2.5vh;
+    padding-bottom: 1vh;
 }
 
 .nav li a{
@@ -39,7 +99,7 @@
 /* ============= HOME ============== */
 
 #home {
-    min-height: 80vh;
+    height: 90vh;
     color: #FFFFFF;
     font-family: "Satoshi";
     font-weight: 500;
@@ -73,6 +133,42 @@
     height: 30px;
 }
 
+#pic img {
+    height: 100%;
+}
+
 /* =========== PROJECTS ============ */
+
+#projects {
+    min-height: 80vh;
+    color: #FFFFFF;
+    font-family: "Satoshi";
+    font-weight: 500;
+    padding: 2.5vw 7.5vw 2.5vw 7.5vw
+}
+
+#projects .row .col {
+    height: 40vw;
+    margin: 0px 10px 0px 10px;
+    background-color: #525469;
+    padding: 0px;
+}
+
+.project h3 {
+    font-size: 2vw;
+}
+
+.tech {
+    width: fit-content;
+    height: 30px;
+    display: inline;
+    margin-right: 0.5vw;
+    padding: 0.25vw 0.85vw 0.25vw 0.85vw;
+    border-radius: 5px;
+    font-size: 1.25vw;
+    background-color: #977AEE;
+    text-align: center;
+}
+
 /* ========== EXPERIENCE =========== */
 /* ============ ABOUT ============== */
