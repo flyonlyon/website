@@ -1,0 +1,141 @@
+/* ============ GENERAL ============ */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #08080BFF !important;
+} /* body */
+
+h1 {
+    font-size: 48px !important;
+    font-weight: 400px !important;
+    font-family: "Satoshi";
+} /* h1 */
+
+h2 {
+    font-size: 42px !important;
+    font-weight: 400px !important;
+    font-family: "Satoshi";
+} /* h2 */
+
+h3 {
+    font-size: 22px !important;
+    font-weight: 400px !important;
+    font-family: "Satoshi";
+} /* h3 */
+
+.noPadding {
+    margin: 0px;
+    padding: 0px;
+} /* .noPadding */
+
+.purpleTag {
+    margin-right: 10px;
+    padding: 2px 15px 2px 15px;
+    background-color: #977AEEFF;
+    border-radius: 5px;
+} /* .purpleTag */
+
+.social {
+    width: 40px;
+    height: 40px;
+} /* .social */
+
+purple {color: #AF96FAFF;}
+.section {background-color: #171721FF;}
+::selection {background-color: #977AEE99;}
+
+/* ========== BACKGROUND ========== */
+
+#background {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    
+    opacity: 0.1;
+    background-image: url("Assets/Space.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+} /* #background */
+
+/* ========== NAVBAR ========== */
+
+
+.navbar {
+    padding-top: 5vh !important;
+    padding-right: 5vw !important;
+    padding-bottom: 1vh !important;
+    position: relative;
+} /* .navbar */
+
+.nav-item {
+    padding: 10px 20px 10px 20px !important;
+    color: #FFFFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Satoshi";
+} /* .nav-item */
+
+.nav-item:hover {
+    color: #AF96FAFF;
+} /* .nav-item:hover */
+
+/* ========== HOME ========== */
+
+#home {
+    height: 30vh;
+    margin: 30vh 0 30vh 15vw;
+    color: #FFFFFFFF;
+} /* .home */
+
+.btn-primary {
+    border-radius: 5px !important;
+    border: none !important;
+    padding: 5px 25px 5px 25px !important;
+    background-color: #977AEEFF !important;
+    border: 1px solid transparent !important;
+} /* .btn-primary */
+
+.btn-primary:hover {
+    color: #977AEEFF !important;
+    border: 1px solid #977AEEFF !important;
+    background-color: transparent !important;
+} /* .btn-primary:hover */
+
+.btn-secondary {
+    border-radius: 5px !important;
+    padding: 5px 25px 5px 25px !important;
+    border: 1px solid #FFFFFFFF !important;
+    background-color: transparent !important;
+} /* .btn-secondary */
+
+.btn-secondary:hover {
+    color: #AF96FAFF !important;
+    border: 1px solid #AF96FAFF !important;
+} /* .btn-secondary */
+
+.social {
+    width: 35px;
+    height: 35px;
+}
+
+/* ========== Projects ========== */
+
+#projects {
+    color: #FFFFFFFF;
+    padding: 3vw 10vw !important;
+} /* .projects */
+
+.project {
+    width: 250px;
+}/* .projects-img */
+
+.carousel-inner {
+    width: 100% !important;
+    height: 250px !important;
+}
+
+.carousel-item {
+    object-fit: fill;
+}

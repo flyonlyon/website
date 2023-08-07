@@ -6,7 +6,6 @@
 
 .lightCard {
     background-color: #404255FF;
-    
 }
 
 .noPadding {
@@ -14,64 +13,58 @@
    margin: 0 !important;
 }
 
-h1 {
-    font-size: 60px;
-}
 
-/* ========== BACKGROUND =========== */
 
-@keyframes hue {
-    0% {transform: scale(1);}
-    25% {transform: scale(0.9);}
-    50% {transform: scale(1);}
-    75% {transform: scale(1.1);}
-    100% {transform: scale(1);}
-}
+/* ========= Background ========= */
 
-.hue {
-    z-index: -1;
-    opacity: 0.3;
+#background { 
+    width: 100vw;
+    height: 100vh;
     position: fixed;
     
-    border-radius: 100%;
+    opacity: 0.15;
     filter: blur(7000px);
+    background-color: #17181B;
     
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
+    overflow: visible;
+} /* .background */
 
-#Circle1 {
-    height: 30vw;
-    width: 30vw;
-    background-color: #77ACA2; 
-    margin-left: 15vw;
-    margin-top: -10vw;
-    
-    animation-name: hue;
-    animation-duration: 5s;
-}
+.circle {
+    height = width;
+    position: absolute;
+} /* .circle */
 
-#Circle2 {
-    height: 35vw;
-    width: 35vw;
-    background-color: #977AEE; 
-    margin-left: 52vw;
-    margin-top: 10vw;
+#green { 
+    width: 500px;
+    margin: -200px 0px 0px 150px;
     
-    animation-name: hue;
-    animation-duration: 7s;
-}
+    animation: breathing 13s ease-out infinite normal;
+    background-color: #77ACA2;
+} /* #green */
 
-#Circle3 {
-    height: 25vw;
-    width: 25vw;
-    background-color: #8A716A; 
-    margin-left: 17vw;
-    margin-top: 30vw;
+#purple {
+    width: 550px;
+    margin: 150px 0px 0px 750px;
     
-    animation-name: hue;
-    animation-duration: 9s;
-}
+    animation: breathing 23s ease-out infinite normal;
+    background-color: #977AEE;
+} /* #purple */
+
+#brown {
+    width: 400px;
+    height: 400px;
+    margin: 500px 0px 0px 200px;
+    
+    animation: breathing 41s ease-out infinite normal;
+    background-color: #8A716A;
+} /* #brown */
+
+@keyframes breathing {
+    0% {transform: scale(0.9);}
+    25% {transform: scale(1);}
+    60% {transform: scale(0.95);}
+    100% {transform: scale(0.9);}
+} /* breathing */
 
 /* ============ NAV BAR ============ */
 
