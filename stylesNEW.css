@@ -52,41 +52,68 @@ purple {color: #AF96FAFF;}
     height: 100vh;
     position: fixed;
     
-    opacity: 0.1;
-    background-image: url("Assets/Space.png");
-    background-size: 100% 100%;
+    opacity: 0.3;
+    background-image: url("Assets/Images/Space.png");
+    background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
 } /* #background */
 
 /* ========== NAVBAR ========== */
 
-
 .navbar {
-    padding-top: 5vh !important;
-    padding-right: 5vw !important;
-    padding-bottom: 1vh !important;
-    position: relative;
-} /* .navbar */
-
-.nav-item {
-    padding: 10px 20px 10px 20px !important;
-    color: #FFFFFFFF;
+    height: 20vh;
+    padding: 5vh 5vw 5vh 5vw !important;
+    
     font-size: 16px;
-    font-weight: 400;
-    font-family: "Satoshi";
-} /* .nav-item */
+    font-weight: 300;
+    color: #FFFFFFFF;
+} /* .navbar */
 
 .nav-item:hover {
     color: #AF96FAFF;
 } /* .nav-item:hover */
 
+@media (max-width: 700px) {
+    .nav-text {
+        display: none;
+    } /* .nav-text */
+} /* @media (max-width: 700) */
+
+@media (min-width: 701px) {
+    .nav-drop {
+        display: none !important;
+    } /* .nav-text */
+} /* @media (min-width: 701) */
+
+.dropdown-menu {
+    width: 100px !important;
+    padding: 0 88px 0 0 !important;
+    background-color: transparent !important;
+}
+
+.dropdown-item {
+    float: right;
+    margin: 5px 0px 5px -70px;
+    padding: 5px 20px!important;
+    width: fit-content !important;
+    
+    color: #FFFFFFFF !important;
+    background-color: transparent !important;
+}
+
+.dropdown-item:hover {
+    color: #AF96FAFF !important;
+    background-color: transparent !important;
+}
+
 /* ========== HOME ========== */
 
 #home {
-    height: 30vh;
-    margin: 30vh 0 30vh 15vw;
+    min-height: 30vh;
+    margin: 20vh 0 30vh 15vw;
     color: #FFFFFFFF;
+    
 } /* .home */
 
 .btn-primary {
@@ -118,14 +145,14 @@ purple {color: #AF96FAFF;}
 .social {
     width: 35px;
     height: 35px;
-}
+} /* .social */
 
 /* ========== Projects ========== */
 
 #projects {
     color: #FFFFFFFF;
-    padding: 3vw 10vw !important;
-} /* .projects */
+    padding: 3vw 10vw 5vw 10vw !important;
+} /* #projects */
 
 .project {
     width: 250px;
@@ -133,9 +160,58 @@ purple {color: #AF96FAFF;}
 
 .carousel-inner {
     width: 100% !important;
-    height: 250px !important;
-}
+    height: 100% !important;
+} /* .carousel-inner */
 
 .carousel-item {
     object-fit: fill;
-}
+} /* .carousel-item */
+
+/* ========== Skills ========== */
+
+#skills {
+    color: #FFFFFFFF;
+    width: 100%;
+    padding: 5vw 0vw;
+} /* #skills */
+
+.skill {
+    width: 100%;
+    height: 200px;
+    background-color: #171721FF;
+} /* .skill */
+
+.skillName {
+    padding: 20px 0 0 145px;
+} /* .skillName */
+
+.skillInfo {
+    width: 90%;
+    padding: 20px 0 0 10%;
+} /* .skillName */
+
+.icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 7px;
+    margin: -20px 0px 0px 40px;
+    background-color: #977AEEFF;
+    position: absolute;
+    justify-content: center;
+} /* .icon */
+
+.material-symbols-outlined { margin: 8.5px; }
+.material-symbols-outlined.md-48 { font-size: 48px; }
+
+/* ========== About ========== */
+
+#about {
+    color: #FFFFFFFF;
+    padding: 3vw 10vw 5vw 10vw !important;
+} /* #projects */
+
+.profile {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+} /* .profile */
