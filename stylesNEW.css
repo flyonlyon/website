@@ -24,6 +24,12 @@ h3 {
     font-family: "Satoshi";
 } /* h3 */
 
+h4 {
+    font-size: 18px !important;
+    font-weight: 400px !important;
+    font-family: "Satoshi";
+} /* h4 */
+
 .noPadding {
     margin: 0px;
     padding: 0px;
@@ -143,15 +149,15 @@ purple {color: #AF96FAFF;}
 } /* .btn-secondary */
 
 .social {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
 } /* .social */
 
 /* ========== Projects ========== */
 
 #projects {
     color: #FFFFFFFF;
-    padding: 3vw 10vw 5vw 10vw !important;
+    padding: 3vw 10vw 3vw 10vw !important;
 } /* #projects */
 
 .project {
@@ -166,6 +172,17 @@ purple {color: #AF96FAFF;}
 .carousel-item {
     object-fit: fill;
 } /* .carousel-item */
+
+.more {
+    width: fit-content !important;
+    padding: 5px 20px !important;
+    font-size: 18px !important;
+    border-color: transparent !important;
+} /* .more */
+
+.more:hover {
+    border-color: transparent !important;
+} /* .more:hover */
 
 /* ========== Skills ========== */
 
@@ -215,3 +232,8 @@ purple {color: #AF96FAFF;}
     height: 100%;
     padding: 20px;
 } /* .profile */
+
+.aboutInfo {
+    color: #FFFFFFFF !important;
+}
+
