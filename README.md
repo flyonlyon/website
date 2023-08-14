@@ -1,10 +1,7 @@
-Hello :> Welcome to the files of my personal website! 
+Hello :) Welcome to the source code of my personal website! 
 
-If you have any comments about things you think could be improved upon/optimized, please don't submit any pull requests, I'll end up denying them. I want this website to reflect my abilities as a developer, and having someone else do all the hard work feels a bit disingenuous. Feel free to comment or email and let me know what you noticed, as I'm always looking to improve my work!
-
-NOTE: This website is still a work in progress, so it might still be broken. That's on purpose (for now)
-
+If you have any comments about things you think could be improved upon/optimized, feel free to let me know! I'm always looking for ways to improve its look/feel.
 
 TODO:
-- Add/remove elements from navbar (Home?)
-- Add links to nav bar
+- Create a project directory, with more detailed project info
+- Add more javascript animations to make website look even cooler 😮‍💨
