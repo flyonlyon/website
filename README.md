@@ -1,11 +1,8 @@
-Hello :> Welcome to the files of my personal website! <br>
-Link: https://flyonlyon.github.io/personalWebsite/
+Link to site: https://flyonlyon.github.io/personalWebsite/ <br>
 
-If you have any comments about things you think could be improved upon/optimized, please don't submit any pull requests, I'll end up denying them. I want this website to reflect my abilities as a developer, and having someone else do all the hard work feels a bit disingenuous. Feel free to comment or email and let me know what you noticed, as I'm always looking to improve my work!
-
-NOTE: This website is still a work in progress, so it might still be broken. That's on purpose (for now)
-
+Hello :) Welcome to the source code for my personal website! <br>
+If you have any comments about things that could be improved upon/optimized, feel free to let me know, as I'm always looking to improve my work!
 
 TODO:
-- Add/remove elements from navbar (Home?)
-- Add links to nav bar
+- Create a project directory with more detailed info
+- Add more js animations to make my website look cool(er) 😮‍💨
