@@ -1,9 +1,14 @@
 /* ============ GENERAL ============ */
 
+@font-face {
+  font-family: "Satoshi";
+  src: url("myFont.woff2");
+} /* @font-face */
+
 body {
     margin: 0px;
     padding: 0px;
-    font-family: "Arial" !important;
+    font-family: 'Satoshi', sans-serif !important;
     background-color: #08080BFF !important;
 } /* body */
 
