@@ -72,12 +72,22 @@ purple {color: #AF96FAFF;}
     .nav-text {
         display: none;
     } /* .nav-text */
+    
+    .divider {
+        display: none;
+    } /* .dropdown */
 } /* @media (max-width: 700) */
 
 @media (min-width: 701px) {
     .nav-drop {
         display: none !important;
     } /* .nav-text */
+    
+    .divider {
+        width: 1px;
+        height: 30px;
+        background-color:white;
+    } /* .dropdown */
 } /* @media (min-width: 701) */
 
 .dropdown-menu {
