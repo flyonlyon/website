@@ -1,9 +1,14 @@
 /* ============ GENERAL ============ */
 
 :root {
-    --lightPurple: #A488F9;
-    --darkPurple: #7E5EDD;
+    --lightPurple: #A488F9FF;
+    --darkPurple: #7E5EDDFF;
     --backgroundColor: #08080BFF;
+    --sectionColor: #1C1C29FF;
+    
+    
+::selection {background-color: #977AEE99;}
+    
 } /* :root */
 
 body {
@@ -12,6 +17,10 @@ body {
     font-family: 'Satoshi', sans-serif !important;
     background-color: var(--backgroundColor) !important;
 } /* body */
+
+.section {
+    background-color: var(--sectionColor)
+} /* .section 8 */
 
 .social {
     width: 27px;
@@ -147,7 +156,7 @@ body {
 
 #home .card-1 {
     position: absolute;
-    top: -100px;
+    top: -120px;
     left: -10px;
     transform: rotate(-5deg);
     
@@ -156,9 +165,136 @@ body {
 
 #home .card-2 {
     position: absolute;
-    top: -100px;
-    left: -10px;
+    top: -60px;
+    left: 200px;
     transform: rotate(10deg);
     
     object-position: 10px, 10px;
 }
+
+
+/* =========== EXPERIENCE =========== */
+
+#experience {
+    color: #FFFFFFFF;
+    padding: 3vw 10vw 3vw 10vw !important;
+} /* #experience */
+
+.pop-out {
+    position: absolute;
+} /* .pop-out */
+
+.iPhone {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 65px;
+    left: -100px;
+    transform: rotate(-5deg);
+    z-index: 1;
+} /* .iPhone */
+
+.chili {
+    width: 160px;
+    height: auto;
+    position: absolute;
+    top: 140px;
+    right: -75px;
+} /* .chili */
+
+.brawlers {
+    width: 190px;
+    height: auto;
+    position: absolute;
+    top: 65px;
+    left: -120px;
+} /* .brawlers */
+
+.store-image {
+    width: 170px;
+    height: auto;
+} /* .store-image */
+
+.project-info {
+    align-content: center !important;
+} /* .project-info */
+
+.project-header {
+    display: flex;
+    align-items: center !important;
+} /* .center-flex */
+
+.project-icon {
+    width: 50px;
+    height: 50px;
+} /* .project-icon */
+
+#experience h1 {
+    line-height: 1.3;
+    font-size: 44px !important;
+    font-weight: 600 !important;
+} /* .experience h1 */
+
+#experience h2 {
+    line-height: 1.3;
+    font-size: 28px !important;
+    font-weight: 600 !important;
+} /* .experience h2 */
+
+#experience p {
+    line-height: 1.3;
+    font-size: 20px !important;
+    text-underline-position: under;
+} /* .experience p */
+
+#experience a {
+    color: white;
+} /* #experience a */
+
+#experience a:hover {
+    text-decoration: none;
+} /* #experience a */
+
+.underline {
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    left: 105px;
+    border-bottom: 2px solid white;
+} /* .underline */
+
+.in-text-icon {
+    position: relative;
+    right: 2px;
+    top: 1px;
+    font-size: 16px !important;
+} /* .link-icon */
+
+.purple-tag {
+    margin: 0 10px 8px 0;
+    padding: 2px 15px 2px 15px;
+    background-color: var(--darkPurple);
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px !important;
+} /* .purpleTag */
+
+.link-btn {
+    color: white !important;
+    font-weight: 500 !important;
+    border-radius: 5px !important;
+    padding: 4px 17px 4px 17px !important;
+    border: 1px solid white !important;
+    background-color: transparent !important;
+} /* .link-button */
+
+.link-btn:hover {
+    color: var(--lightPurple) !important;
+    border: 1px solid var(--lightPurple) !important;
+} /* .link-button:hover */
+
+.link-icon {
+    position: relative;
+    top: 2px;
+    font-size: 16px !important;
+} /* .link-icon */
