@@ -21,9 +21,6 @@ function runAfterDOMLoaded() {
         background.style.backgroundImage = images[currentBackgroundIndex];
         currentBackgroundIndex = (currentBackgroundIndex + 1) % images.length;
     } // setBackground()
-
-    setBackground();
-    setInterval(setBackground, 1500);
     
     
     // =========================== About Me =========================== //
@@ -34,11 +31,6 @@ function runAfterDOMLoaded() {
     const aboutMeImage1 = document.getElementById('about-me-img-1');
     const aboutMeImage2 = document.getElementById('about-me-img-2');
     const aboutMeImage3 = document.getElementById('about-me-img-3');
-    
-    console.log(aboutMeImage1);
-    
-    allWork.addEventListener('click', toggleWork);
-    allPlay.addEventListener('click', togglePlay);
     
     function toggleWork() {
         allWork.classList.add('active-option');
@@ -65,5 +57,102 @@ function runAfterDOMLoaded() {
             aboutMeText.style.opacity = 1;
         }, 250);
     } // togglePlay
+    
+    
+    // =========================== Resizing =========================== //
+    
+    const homeCard1 = document.getElementById('home-card-1');
+    const homeCard2 = document.getElementById('home-card-2');
+    const homeSubtitle = document.getElementById('home-subtitle');
+    
+    const lifeImages = document.getElementById('life-images');
+    const lifeInfo = document.getElementById('life-info');
+    const hikeImages = document.getElementById('hike-images');
+    const hikeInfo = document.getElementById('hike-info');
+    const brawlImages = document.getElementById('brawl-images');
+    const brawlInfo = document.getElementById('brawl-info');
+    
+    function resizeElements() {
+        let viewHeight = window.innerHeight;
+        let viewWidth = window.innerWidth;
+        
+        console.log(viewWidth);
+        
+        // Home cards
+        if (viewWidth < 951) {
+            homeCard1.classList.add('hidden');
+            homeCard1.classList.remove('visible');
+            homeCard2.classList.add('hidden');
+            homeCard2.classList.remove('visible');
+        } else if (viewWidth < 1176) {
+            homeCard1.classList.add('hidden');
+            homeCard1.classList.remove('visible');
+            homeCard2.classList.add('visible');
+            homeCard2.classList.remove('hidden');
+        } else {
+            homeCard1.classList.add('visible');
+            homeCard1.classList.remove('hidden');
+            homeCard2.classList.add('visible');
+            homeCard2.classList.remove('hidden');
+        } // if else
+        
+        // Home Subtitle
+        if (viewWidth < 651) {
+            homeSubtitle.innerHTML = "Developer, designer, and game enthusiast @ umich <br> seeking full-time opportunities starting in 2025";
+        } else {
+            homeSubtitle.innerHTML = "I’m a developer, designer, and game enthusiast @ umich <br> seeking full-time opportunities starting in 2025";
+        } // if else
+        
+        // Experience Columns
+        if (viewWidth < 901) {
+            lifeImages.classList.add('col-10');
+            lifeInfo.classList.add('col-11');
+            lifeImages.classList.remove('col-5');
+            lifeInfo.classList.remove('col-6');
+            
+            hikeImages.classList.add('col-10');
+            hikeInfo.classList.add('col-11');
+            hikeImages.classList.remove('col-5');
+            hikeInfo.classList.remove('col-6');
+            
+            brawlImages.classList.add('col-10');
+            brawlInfo.classList.add('col-11');
+            brawlImages.classList.remove('col-5');
+            brawlInfo.classList.remove('col-6');
+        } else {
+            lifeImages.classList.add('col-5');
+            lifeInfo.classList.add('col-6');
+            lifeImages.classList.remove('col-10');
+            lifeInfo.classList.remove('col-11');
+            
+            hikeImages.classList.add('col-5');
+            hikeInfo.classList.add('col-6');
+            hikeImages.classList.remove('col-10');
+            hikeInfo.classList.remove('col-11');
+            
+            brawlImages.classList.add('col-5');
+            brawlInfo.classList.add('col-6');
+            brawlImages.classList.remove('col-10');
+            brawlInfo.classList.remove('col-11');
+        }
+        
+        // Specific Experience
+        
+    } // resizeElements()
+    
+    
+    // ====================== Startup Logic ====================== //
+    
+    // Fading Background
+    setBackground();
+    setInterval(setBackground, 1500);
+    
+    // About Me
+    allWork.addEventListener('click', toggleWork);
+    allPlay.addEventListener('click', togglePlay);
+    
+    // Resizing
+    resizeElements();
+    window.addEventListener('resize', resizeElements)
     
 } // runAfterDOMLoaded()
