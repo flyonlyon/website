@@ -72,6 +72,9 @@ function runAfterDOMLoaded() {
     const brawlImages = document.getElementById('brawl-images');
     const brawlInfo = document.getElementById('brawl-info');
     
+    const aboutTextCol = document.getElementById('about-me-text-col')
+    const aboutImageCol = document.getElementById('about-me-img-col')
+    
     function resizeElements() {
         let viewHeight = window.innerHeight;
         let viewWidth = window.innerWidth;
@@ -134,9 +137,32 @@ function runAfterDOMLoaded() {
             brawlInfo.classList.add('col-6');
             brawlImages.classList.remove('col-10');
             brawlInfo.classList.remove('col-11');
-        }
+        } // if else
         
-        // Specific Experience
+        // About Me
+        if (viewWidth < 1401) {
+            aboutMeImage1.classList.add('hidden');
+            aboutMeImage1.classList.remove('visible');
+            aboutMeImage2.classList.add('hidden');
+            aboutMeImage2.classList.remove('visible');
+            aboutMeImage3.classList.add('hidden');
+            aboutMeImage3.classList.remove('visible');
+            setTimeout(() => {
+                if (viewWidth < 1401) {
+                    aboutTextCol.classList.remove('col-7');
+                    aboutTextCol.classList.add('col-12');
+                }
+            }, 500);
+        } else {
+            aboutTextCol.classList.add('col-7');
+            aboutTextCol.classList.remove('col-12');
+            aboutMeImage1.classList.add('visible');
+            aboutMeImage1.classList.remove('hidden');
+            aboutMeImage2.classList.add('visible');
+            aboutMeImage2.classList.remove('hidden');
+            aboutMeImage3.classList.add('visible');
+            aboutMeImage3.classList.remove('hidden');
+        } // if else
         
     } // resizeElements()
     

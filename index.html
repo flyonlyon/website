@@ -126,7 +126,7 @@
                 <div class="col-md12 flex-col">
             
                     <!-- KTP Life App -->
-                    <div class="row mt-5">
+                    <div class="row mt-5 project-vertical">
                         <div id="life-images" class="col-5 ml-5">
                             <div id="lifeAppControls" class="carousel slide" data-ride="rushAppCarousel">
                                 <div class="carousel-inner">
@@ -191,7 +191,7 @@
                     </div>
 
                     <!-- Project Hike -->
-                    <div class="row  mt-5">
+                    <div class="row  mt-5 project-vertical">
                         <div id="hike-images" class="col-5 ml-5">
                             <div id="hikeControls" class="carousel slide" data-ride="hikeCarousel">
                                 <div class="carousel-inner">
@@ -223,7 +223,7 @@
                             <img class="pop-out chili" src="Assets/Images/Chili.png">
                         </div>
                         <div id="hike-info" class="col-6 project-info">
-                            <div class="ml-5">
+                            <div class="experience-spacing">
                                 <div class="project-header mb-3">
                                     <img class="project-icon mr-3" src="Assets/Images/HikeLogo.png">
                                     <h2 class="mb-0"> Project Hike </h2>
@@ -231,10 +231,9 @@
 
                                 <p class="mr-3"> Case study of 'A Short Hike', prototyped in partnership with 
                                     <a href="https://www.wolverinesoft.org" target="_blank">
-                                        WolverineSoft Studio
+                                        <span class="underline">WolverineSoft Studio</span>
                                         <span class="material-symbols-outlined in-text-icon"> open_in_new </span>
                                     </a>
-                                    <span class="underline"></span>
                                 </p>
 
                                 <div class="d-flex flex-wrap mb-2">
@@ -258,7 +257,7 @@
                     <div class="row mt-4"></div>
 
                     <!-- 8-Ball Brawl -->
-                    <div class="row mt-5">
+                    <div class="row mt-5 project-vertical">
                         <div id="brawl-images" class="col-5 ml-5">
                             <div id="brawlControls" class="carousel slide" data-ride="brawlCarousel">
                                 <div class="carousel-inner">
@@ -287,7 +286,7 @@
                             <img class="pop-out brawlers" src="Assets/Images/Brawlers.png">
                         </div>
                         <div id="brawl-info" class="col-6 project-info">
-                            <div class="ml-5">
+                            <div class="experience-spacing">
                                 <div class="project-header mb-3">
                                     <img class="project-icon mr-3" src="Assets/Images/BrawlLogo.png">
                                     <h2 class="mb-0"> 8-Ball Brawl </h2>
@@ -330,22 +329,23 @@
         
         <!-- About -->
         <div id="about">
-            <h1 class="text-center noPadding mt-5 mb-5"> About Me </h1>
-            
-            <div class="row">
-                <div class="col-7">
-                    <div class="option-selector  d-flex">
-                        <div id="all-work" class="option active-option"> All Work</div>
-                        <div id="all-play" class="option ml-4"> All Play </div>
+            <div class="about-clamp">
+                <h1 class="text-center noPadding mt-5 mb-5"> About Me </h1>
+                <div class="row">
+                    <div id="about-me-text-col" class="col-7">
+                        <div class="option-selector  d-flex">
+                            <div id="all-work" class="option active-option"> All Work</div>
+                            <div id="all-play" class="option ml-4"> All Play </div>
+                        </div>
+                        <p id="about-me-text" class="mt-4"> 
+                            I’m a senior at the University of Michigan double majoring in Computer Science and Asian Studies. <br><br> In elementary school, I was introduced to Scratch   , a block-based game programming website, and unknowingly stumbled face first into the world of software development. <br><br> Since then, I’ve been involving myself more with disciplines adjacent to my own, and have gotten the chance to work on projects ranging from video editing and UX design to music production and storytelling! <br><br> I want to harness technology to create products and experiences that bridge cultures, inspire creativity, and bring people together. <br><br> If you’re interested in working together, please reach out!"</p>
+                        <div class="mt-5 mb-5"></div>
                     </div>
-                    <p id="about-me-text" class="mt-4"> 
-                        I’m a senior at the University of Michigan double majoring in Computer Science and Asian Studies. <br><br> In elementary school, I was introduced to Scratch   , a block-based game programming website, and unknowingly stumbled face first into the world of software development. <br><br> Since then, I’ve been involving myself more with disciplines adjacent to my own, and have gotten the chance to work on projects ranging from video editing and UX design to music production and storytelling! <br><br> I want to harness technology to create products and experiences that bridge cultures, inspire creativity, and bring people together. <br><br> If you’re interested in working together, please reach out!"</p>
-                    <div class="mt-5 mb-5"></div>
-                </div>
-                <div class="col-5">
-                    <img id="about-me-img-1" class="image-card card-1" src="Assets/Images/Google.png">
-                    <img id="about-me-img-2" class="image-card card-2" src="Assets/Images/Chinatown.png">
-                    <img id="about-me-img-3" class="image-card card-3" src="Assets/Images/KTP.png">
+                    <div id="about-me-img-col" class="col-5">
+                        <img id="about-me-img-1" class="image-card card-1" src="Assets/Images/Google.png">
+                        <img id="about-me-img-2" class="image-card card-2" src="Assets/Images/Chinatown.png">
+                        <img id="about-me-img-3" class="image-card card-3" src="Assets/Images/KTP.png">
+                    </div>
                 </div>
             </div>
         </div>
