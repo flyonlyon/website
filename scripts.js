@@ -65,15 +65,14 @@ function runAfterDOMLoaded() {
     const homeCard2 = document.getElementById('home-card-2');
     const homeSubtitle = document.getElementById('home-subtitle');
     
-    const lifeImages = document.getElementById('life-images');
-    const lifeInfo = document.getElementById('life-info');
-    const hikeImages = document.getElementById('hike-images');
-    const hikeInfo = document.getElementById('hike-info');
-    const brawlImages = document.getElementById('brawl-images');
-    const brawlInfo = document.getElementById('brawl-info');
+    const largeDisplay = document.getElementById('large-display');
+    const smallDisplay = document.getElementById('small-display');
     
-    const aboutTextCol = document.getElementById('about-me-text-col')
-    const aboutImageCol = document.getElementById('about-me-img-col')
+    const aboutImageCol = document.getElementById('about-me-img-col');
+    
+    const habits = document.getElementById('habits');
+    const voxel = document.getElementById('voxel');
+    const portfolio = document.getElementById('portfolio');
     
     function resizeElements() {
         let viewHeight = window.innerHeight;
@@ -108,60 +107,39 @@ function runAfterDOMLoaded() {
         
         // Experience Columns
         if (viewWidth < 901) {
-            lifeImages.classList.add('col-10');
-            lifeInfo.classList.add('col-11');
-            lifeImages.classList.remove('col-5');
-            lifeInfo.classList.remove('col-6');
-            
-            hikeImages.classList.add('col-10');
-            hikeInfo.classList.add('col-11');
-            hikeImages.classList.remove('col-5');
-            hikeInfo.classList.remove('col-6');
-            
-            brawlImages.classList.add('col-10');
-            brawlInfo.classList.add('col-11');
-            brawlImages.classList.remove('col-5');
-            brawlInfo.classList.remove('col-6');
+            largeDisplay.classList.add('remove');
+            smallDisplay.classList.remove('remove');
         } else {
-            lifeImages.classList.add('col-5');
-            lifeInfo.classList.add('col-6');
-            lifeImages.classList.remove('col-10');
-            lifeInfo.classList.remove('col-11');
-            
-            hikeImages.classList.add('col-5');
-            hikeInfo.classList.add('col-6');
-            hikeImages.classList.remove('col-10');
-            hikeInfo.classList.remove('col-11');
-            
-            brawlImages.classList.add('col-5');
-            brawlInfo.classList.add('col-6');
-            brawlImages.classList.remove('col-10');
-            brawlInfo.classList.remove('col-11');
+            smallDisplay.classList.add('remove');
+            largeDisplay.classList.remove('remove');
         } // if else
         
         // About Me
-        if (viewWidth < 1401) {
+        if (viewWidth < 1201) {
             aboutMeImage1.classList.add('hidden');
             aboutMeImage1.classList.remove('visible');
             aboutMeImage2.classList.add('hidden');
             aboutMeImage2.classList.remove('visible');
             aboutMeImage3.classList.add('hidden');
             aboutMeImage3.classList.remove('visible');
-            setTimeout(() => {
-                if (viewWidth < 1401) {
-                    aboutTextCol.classList.remove('col-7');
-                    aboutTextCol.classList.add('col-12');
-                }
-            }, 500);
         } else {
-            aboutTextCol.classList.add('col-7');
-            aboutTextCol.classList.remove('col-12');
             aboutMeImage1.classList.add('visible');
             aboutMeImage1.classList.remove('hidden');
             aboutMeImage2.classList.add('visible');
             aboutMeImage2.classList.remove('hidden');
             aboutMeImage3.classList.add('visible');
             aboutMeImage3.classList.remove('hidden');
+        } // if else
+        
+        // Additional
+        if (viewWidth < 806) {
+            habits.classList.add('col-12');
+            voxel.classList.add('col-12');
+            portfolio.classList.add('col-12');
+        } else {
+            habits.classList.remove('col-12');
+            voxel.classList.remove('col-12');
+            portfolio.classList.remove('col-12');
         } // if else
         
     } // resizeElements()
