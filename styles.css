@@ -553,6 +553,7 @@ body {
     font-size: 18px !important;
     font-weight: 400 !important;
     transition: opacity 0.25s ease-in-out;
+    text-decoration: none;
 } /* p */
 
 .option {
@@ -562,10 +563,24 @@ body {
     color: var(--lightPurple);
 } /* .option */
 
+.option:hover {
+    cursor: pointer;
+} /* .option:hover */
+
 .active-option {
     text-decoration: underline;
     text-underline-position: below;
 } /* .active-option */
+
+.about-link {
+    color: white;
+    text-decoration: none;
+} /* #about-me-text */
+
+.about-link:hover {
+    color: var(--lightPurple);
+    text-decoration: underline;
+} /* #about-me-text */
 
 #about .image-card {
     width: 200px !important;
