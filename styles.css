@@ -4,10 +4,10 @@
     --lightPurple: #A488F9FF;
     --darkPurple: #7E5EDDFF;
     --backgroundColor: #08080BFF;
-    --sectionColor: #1C1C29FF;    
+    --sectionColor: #1C1C29FF;
 } /* :root */
 
-::selection {background-color: #977AEE99;}
+::selection {background-color: var(--lightPurple);}
 
 body {
     margin: 0px;
@@ -519,6 +519,11 @@ body {
     color: #FFFFFFFF;
 } /* #about */
 
+.about-me-link {
+    color: white;
+    text-decoration: none;
+} /* #about-me-text */
+
 #about-me-img-col {
     position: absolute;
     margin-left: clamp(0px, 75vw, 1275px);
@@ -561,6 +566,11 @@ body {
     font-weight: 600 !important;
     color: var(--lightPurple);
 } /* .option */
+
+.option:hover {
+    cursor: pointer;
+    color: var(--lightPurple);
+} /* .option:hover */
 
 .active-option {
     text-decoration: underline;
