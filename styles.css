@@ -524,6 +524,11 @@ body {
     text-decoration: none;
 } /* #about-me-text */
 
+.about-me-link:hover {
+    color: var(--lightPurple);
+    text-decoration: underline;
+} /* #about-me-text */
+
 #about-me-img-col {
     position: absolute;
     margin-left: clamp(0px, 75vw, 1275px);
